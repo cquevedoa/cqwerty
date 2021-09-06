@@ -1,0 +1,53 @@
+
+@font-face {
+    font-family: CQWERTY;
+    src: url('../fonts/OCRAEXT.TTF');
+    }
+
+
+
+
+    :root {
+        --main-color: #005fbf;
+        --secondary-color: #3a4450;
+        --light-color: #d3d3d3;
+        --old-blue: #014f84;
+        --text-color: #434343;
+        }
+
+/* BOTONES */
+html {
+    box-sizing: border-box;
+    /* font-size: 62.5%;   */
+    margin: 0;
+    /* reset para rems :
+    16px es la base del tamaño fuente en html 
+    62.5 = 10px de 16px
+        */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    
+    font-family: 'Roboto', sans-serif;
+    color: #444;
+    line-height: 2;
+    margin: 0;
+}
+a, a:hover {
+    text-decoration: none;
+}
+ul {
+    margin: 0;
+    list-style: none;
+}
+
+
+/* BOTONES */
+button {
+    border: none;
+    background: none;
+    outline: none;
+}
