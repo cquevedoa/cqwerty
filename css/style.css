@@ -149,6 +149,7 @@ section {
     font-weight: 400;
 }
 .welcome-img {
+    width:100%;
     max-width: 400px;
 }
 
@@ -302,7 +303,7 @@ aside.more-content {
     color: var(--text-color);
 }
 .modal {
-    z-index: 9999999999999999;
+    z-index: 9999999999999;
 }
 
 
