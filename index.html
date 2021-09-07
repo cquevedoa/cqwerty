@@ -128,7 +128,7 @@
     <h1 class="welcome-title">Servicio Técnico de Sistemas y Aplicaciones</h1>
     <p>Ofrecemos soluciones de Software en la Ciudad de Buenos Aires, Soporte Técnico Online y a Domicilio</p>
     <a class="btn btn-lg btn-welcome btn-primary" href="https://wa.me/5491157395741">CONSULTA GRATIS</a>
-    <a class="btn btn-lg btn-welcome btn-outline-secondary" href="#servicios">Servicios</a>
+    <a class="btn btn-lg btn-welcome btn-outline-primary" href="#services">Servicios</a>
 
   </div>
   <div class="col-lg-5">
@@ -166,7 +166,7 @@
   
 
 
-  <main id="services" class="container padding-30 f-column f-wrap">
+  <main id="services" class="mb-5 container flex-wrap">
 
     <h2 class="section-title">Servicios</h2>
 
@@ -175,31 +175,147 @@
         <div class="col service-item">
           <img src="./img/fluency/windows.png" alt="Configuración de Sistemas">
             <!-- <i class="service-icon fab fa-windows"> </i> -->
-            <h3 class="service-title">Sistemas Operativos</h3>
-          <p class="service-text">Instalación de Sitemas Operativos para notebooks y PC: Windows 10 e instalaciones de
+            <h3 class="service-titleX">Sistemas Operativos</h3>
+          <p class="service-textX">Instalación de Sitemas Operativos para notebooks y PC: Windows 10 e instalaciones de
             Linux y Chromiun OS para equipos antiguos.</p>
         </div>
 
         <div class="col service-item">
           <!-- <i class="service-icon fa fa-hdd"> </i>  -->
           <img src="./img/fluency/save.png" alt="Servicio de Backup">
-          <h3 class="service-title">Backup</h3>
-          <p class="service-text">Servicio de Backup de Archivos a unidades externas de almacenamiento. Recuperación
+          <h3 class="service-titleX">Backup</h3>
+          <p class="service-textX">Servicio de Backup de Archivos a unidades externas de almacenamiento. Recuperación
             de información de discos duros de notebooks incluso cuando el equipo no enciende.</p>
         </div>
 
         <div class="col service-item">
           <img src="./img/fluency/cleaning.png" alt="Conexión Wifi">
           <!-- <i class="service-icon fa fa-laptop-medical"> </i> -->
-          <h3 class="service-title"> Mantenimiento</h3>
-          <p class="service-text">Optimización de sistemas para equipos lentos sin necesidad de reinstalar.</p>
+          <h3 class="service-titleX"> Mantenimiento</h3>
+          <p class="service-textX">Optimización de sistemas para equipos lentos sin necesidad de reinstalar.</p>
         </div>
       </div> 
 
 
-      <p class="text-center">
-        <a class="btn-servicios btn btn-outline-dark" href="./servicios.html">Ver más</a>
-      </p>
+      <div class="m-5 text-center">
+        <a class="btn-servicios btn btn-outline-primary"
+        data-toggle="modal" 
+        data-target="#servicesModal"
+        onclick="$('#myModal').on('shown.bs.modal', function () {
+                $('#myInput').trigger('focus')})">+</a>
+      </div>
+      
+      <div class="modal fade" id="servicesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Servicios</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body ">
+              
+                
+              
+            <div class="d-flex flex-wrap">
+              <div>
+                <img class="service-icon-modal" src="./img/fluency/windows.png" alt="Instalación de Windows">
+                <h3 class="service-title-modal"> Instalación de Windows</h3>
+                <p class="service-text-modal">Instalación de Sitemas Operativos para notebooks y PC: Windows 10 y Windows 11
+                  (Próximamente).</p>
+              </div>
+            
+            
+              <div><img class="service-icon-modal" src="./img/fluency/save.png" alt="Backup de información">
+                <h3 class="service-title-modal"> Backup de archivos</h3>
+                <p class="service-text-modal">Pasa tus archivos a unidades seguras al instalar windows, creación de particiones para
+                  que tus archivos no se pierdan.</p>
+              </div>
+            
+              <div> <img class="service-icon-modal" src="./img/fluency/antivirus.png" alt="Backup de información">
+                <h3 class="service-title-modal">Antivirus y Antimalware</h3>
+                <p class="service-text-modal">Eliminación de Virus y Malware. Instalación de Antivirus Premium por 1 o dos años.</p>
+              </div>
+              <div> <img class="service-icon-modal" src="./img/fluency/office.png" alt="Instalación de información">
+                <h3 class="service-title-modal">Instalación de Office</h3>
+                <p class="service-text-modal">Instalación de Paquete Office 2019 Standard o ProPlus por 1 año.</p>
+              </div>
+            
+              <div> <img class="service-icon-modal" src="./img/fluency/password.png" alt="Desbloqueo de Contraseña">
+                <h3 class="service-title-modal">Desbloqueo de Contraseña</h3>
+                <p class="service-text-modal">Desbloqueo de Contraseña de Windows 7, 8.1 y 10 en equipos bloqueados que perdieron
+                  acceso a su contraseña local.</p>
+              </div>
+              <div> <img class="service-icon-modal" src="./img/fluency/hdd.png" alt="Rescate de Archivos">
+                <h3 class="service-title-modal">Recuperación de Archivos</h3>
+                <p class="service-text-modal">Recuperación de
+                  información de discos duros de notebooks incluso cuando el equipo no enciende.</p>
+              </div>
+            
+            
+              <div><img class="service-icon-modal" src="./img/fluency/cleaning.png" alt="Mantenimiento de Equipos">
+                <h3 class="service-title-modal">Mantenimiento</h3>
+                <p class="service-text-modal">Optimización de sistemas para equipos lentos sin necesidad de reinstalar.</p>
+              </div>
+            
+              <div> <img class="service-icon-modal" src="./img/fluency/settings.png" alt="Configuración de controladores">
+                <h3 class="service-title-modal">Configuración de controladores</h3>
+                <p class="service-text-modal"></p>
+              </div>
+            
+              <div> <img class="service-icon-modal" src="./img/fluency/ssd.png" alt="Migración de Sistema Windows a Discos SSD">
+                <h3 class="service-title-modal">Migración de Windows a SSD</h3>
+                <p class="service-text-modal">Migración de Sistema Operativo de Discos Duros (HDD) a Discos Sólidos (SSD).</p>
+              </div>
+            
+              <div> <img class="service-icon-modal" src="./img/fluency/wifi.png" alt="Reparación de Internet">
+                <h3 class="service-title-modal">Reparación de Internet</h3>
+                <p class="service-text-modal">Configuración de Drivers controladores de conexión a Internet, resolución de problemas
+                  de conectividad, drivers de conexión inalámbrica y cableada</p>
+              </div>
+              <img class="service-icon-modal" src="./img/fluency/software.png" alt="Instalación de Software">
+              <h3 class="service-title-modal">Instalación de Software</h3>
+              <p class="service-text-modal">Instalación de Programas por demanda, entre los cuales está la Suite de Adobe Photoshop,
+                Illustrator, Premiere entre otros.</p>
+            </div>
+            <div><img class="service-icon-modal" src="./img/fluency/hardware.png" alt="Mantenimiento de Hardware">
+              <h3 class="service-title-modal">Mantenimiento de Hardware</h3>
+              <p class="service-text-modal">Mantenimiento preventivo y correctivo de hardware. Limpieza de notebooks, cambio de
+                pasta térmica, limpieza de cooler.</p>
+            </div>
+            <div><img class="service-icon-modal" src="./img/fluency/keyboard.png" alt="Cambio de teclado">
+              <h3 class="service-title-modal">Cambio de Teclado</h3>
+              <p class="service-text-modal">Diagnóstico y cambio de teclados de notebooks</p>
+            </div>
+            <div><img class="service-icon-modal" src="./img/fluency/memory.png" alt="Aumento de memoria RAM">
+              <h3 class="service-title-modal">Aumento de memoria RAM</h3>
+              <p class="service-text-modal">Aumento de memoria RAM para equipos portátiles</p>
+            </div>
+            <div><img class="service-icon-modal" src="./img/fluency/printer.png" alt="Configuración de impresoras">
+              <h3 class="service-title-modal">Configuración de impresoras</h3>
+              <p class="service-text-modal">Configuración de drivers controladores de impresoras con conexión inalámbrica y USB.</p>
+            </div>
+            <div><img class="service-icon-modal" src="./img/fluency/linux.png" alt="Soporte de Linux">
+              <h3 class="service-title-modal">Soporte de Linux</h3>
+              <p class="service-text-modal">Soporte, instalación y asesoría en la migración a Linux</p>
+            </div>
+            <div><img class="service-icon-modal" src="./img/fluency/android.png" alt="Soporte de Android">
+              <h3 class="service-title-modal">Soporte de Android</h3>
+              <p class="service-text-modal">Soporte de Software de Android para teléfonos y tablets.</p>
+            </div>
+            <div>
+              <img class="service-icon-modal" src="./img/fluency/teamviewer.png" alt="Soporte Online">
+              <h3 class="service-title-modal">Soporte Online</h3>
+              <p class="service-text-modal">Soporte Remoto mediante software TeamViewer.</p>
+            </div>
+            </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
   </main>
   
 

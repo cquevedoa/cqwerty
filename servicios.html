@@ -1,206 +1,25 @@
-<!DOCTYPE html>
-<html lang="es">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CQWERTY Informática</title>
-    
-       <!-- Icon -->
-       <link rel="shortcut icon" href="./img/icon.svg" type="image/x-icon">
-        
-       <!-- Google Fonts -->
-       <link rel="preconnect" href="https://fonts.gstatic.com">
-       <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-     
-       <!-- Animation -->
-       <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-        <!-- Font Awesome 5.14 -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-     
-        <!-- Bootstrap CSS -->
-       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> 
-       <link rel="stylesheet" href="./css/estilos.css">
-    </head>
-
-    <a class="flex-center" href="https://wa.me/5491157395741" target="_blank" id="btn-whatsapp" title="Contactar">
-        <i class="fab fa-whatsapp"> </i> </a>
-<body>
-
-  
-
-    <header class="flex-column">
-
-        <div class=" bg-main padding-10">
-
-            <div id="top-bar" class=" bg-main padding-10 flex-center">
-            </div><!-- BARRA SUPERIOR -->
-
-        <div class="container main-header flex-start">
-            
-            <div id="logo"  class="padding-10 main-title">  
-            </div>
-           
-    
-            <nav class="padding-10 nav-menu">
-
-                <button id="btn-menu" onclick="menu()">
-                    <i class="fa fa-bars"></i>
-                </button>
-
-                <a class="nav-enlace ocultar-menu " href="./">Inicio</a>
-                <a class="nav-enlace ocultar-menu" href="./nosotros.html">Nosotros</a>
-                <a class="nav-enlace ocultar-menu active" href="#">Servicios</a>
-                <a class="nav-enlace ocultar-menu" href="./contacto.html">Contacto</a>
-                
-            </nav>
-            
-        </div>
-        
-
-    </header>
-
-    <main id="Services" class="container padding-30 f-column f-wrap">
-      
-        <h2 class="text-center fw-300">Servicios</h3>    
-  
-          <div class="row mt-5 service-li  d-flex">
-          <div class="col service-item margin-5">
-              <h3 class="service-title text-center"><i class="fab fa-windows"> </i> Sistemas Operativos</h3>
-              <p class="service-text-1">Instalación de Sitemas Operativos para notebooks y PC: Windows 10 e instalaciones de Linux y Chromiun OS para equipos antiguos.</p>
-             
-  
+<html>
+    <head></head>
+    <body>
+ 
+        <div id="app">
+            <ol>
+              <!--
+                Ahora proporcionamos a cada todo-item con el objeto todo
+                que representa, para que su contenido pueda ser dinámico.
+                También necesitamos proporcionar a cada componente con una "clave",
+                que vamos a explicar más adelante.
+              -->
+              <todo-item
+                v-for="item in serviceList"
+                v-bind:todo="item"
+                v-bind:key="item.id">
+              </todo-item>
+            </ol>
           </div>
-          <div class="col service-item margin-5">
-            <h3 class="service-title  text-center" ><i class="fa fa-hdd"> </i> Backup</h3>
-              <p class="service-text-1 ">Servicio de Backup de Archivos a unidades externas de almacenamiento. Recuperación de información de discos duros de notebooks incluso cuando el equipo no enciende.</p>
-             
+          <script src="./js/services.js"></script>
+        </body>
+
+
   
-  
-          </div>
-          <div class="col service-item margin-5">
-              <h3 class=" service-title text-center"><i class="fa fa-laptop-medical"> </i> Mantenimiento</h3>
-              <p class="service-text-1 ">Optimización de sistemas para equipos lentos sin necesidad de reinstalar.</p>
-              
-          </div>
-          </div>            <!-- FIN FILA -->
-  
-
-          <div class="row  service-li d-flex">
-            <div class="col service-item margin-5">
-                <h3 class=" service-title text-center"><i class="fa fa-shield-alt"> </i> Antivirus</h3>
-                <p class="service-text">Eliminación de Virus y Malware. Instalación de Antivirus Premium por 1 o dos años.</p>
-               
-    
-            </div>
-            <div class="col service-item margin-5">
-                <h3 class=" service-title text-center"><i class="far fa-file-word"> </i> Office</h3>
-                <p class="service-text">Instalación de Paquete Office 2019 Standard o ProPlus por 1 año.</p>
-               
-    
-    
-            </div>
-
-            <div class="col service-item margin-5">
-                <h3 class=" service-title text-center"><i class="fa fa-compact-disc"> </i> Programas</h3>
-                <p class="service-text">Instalación de Programas por demanda, entre los cuales está la Suite de Adobe Photoshop, Illustrator, Premiere entre otros.</p>
-            </div>
-
-            
-            </div>            <!-- FIN FILA -->
-
-
-            <div id="idservicios" class="row  service-li d-flex">
-
-               
-                </div>            <!-- FIN FILA -->
-
-            <div class="row  service-li d-flex">
-
-                <div class="col service-item margin-5">
-                    <h3 class=" service-title text-center"><i class="fa fa-microchip"> </i> Hardware</h3>  
-                    <p class="service-text">Mantenimiento preventivo y correctivo de hardware. Limpieza de notebooks, cambio de pasta térmica, limpieza de cooler.</p>
-
-                </div>
-
-                <div class="col service-item margin-5">
-                    <h3 class=" service-title text-center"><i class="fa fa-keyboard"> </i> Reemplazo de Teclados</h3>
-                    <p class="service-text">Diagnóstico y cambio de teclados de notebooks.</p>
-                </div>
-                
-                <div class="col service-item margin-5">
-                    <h3 class=" service-title text-center"><i class="fa fa-memory"> </i> Memoria RAM</h3>
-                    <p class="service-text">Aumento de memoria RAM para equipos.</p>
-
-                </div>
-                </div>            <!-- FIN FILA -->
-
-
-                <div class="row  service-li d-flex">
-
-                    <div class="col service-item margin-5">
-                        <h3 class=" service-title text-center"><i class="fa fa-wifi"> </i> Conexión Wifi</h3>  
-                        <p class="service-text">Configuración de Drivers controladores de conexión a Internet, resolución de problemas de conectividad.</p>
-    
-                    </div>
-    
-                    <div class="col service-item margin-5">
-                        <h3 class=" service-title text-center"><i class="fa fa-user-lock"> </i> Desbloqueo de Contraseña</h3>
-                        <p class="service-text">Desbloqueo de Contraseña de Windows 7, 8.1 y 10 en equipos bloqueados que perdieron acceso a su contraseña local.</p>
-                    </div>
-                    
-                    <div class="col service-item margin-5">
-                        <h3 class=" service-title text-center"><i class="fab fa-android"> </i> Soporte de Android</h3>
-                        <p class="service-text">Soporte de Software de Android para teléfonos y tablets.</p>
-    
-                    </div>
-                    </div>            <!-- FIN FILA -->
-
-                    <div class="row  service-li d-flex">
-
-                        <div class="col service-item margin-5">
-                            <h3 class=" service-title text-center"><i class="fa fa-ethernet"> </i> Ethernet</h3>  
-                            <p class="service-text">Problemas de conectividad Ethernet, instalación y configuración de redes.</p>
-        
-                        </div>
-        
-                        <div class="col service-item margin-5">
-                            <h3 class=" service-title text-center"><i class="fa fa-video"> </i> CCTV</h3>
-                            <p class="service-text">Servicio de instalación de CCTV para pequeñas empresas.</p>
-                        </div>
-                        
-                        <div class="col service-item margin-5">
-                            <h3 class=" service-title text-center"><i class="fa fa-print"> </i> Impresoras</h3>
-                            <p class="service-text">Configuración de drivers controladores de impresoras con conexión inalámbrica y USB.</p>
-        
-                        </div>
-                        </div>            <!-- FIN FILA -->
-  
-          
-      </main > 
-
-      <footer class=" bg-main">
-        <div class="container mt-5  flex-center padding-10 flex-between footer-column">
-            <p class="copy"> <a href="/codoacodo"> <i class="fa fa-undo"></i>
-                Carlos Quevedo #2124</a></p>
-  
-          <p class="nav-menu">
-              
-              
-              <a class="margin-5" href="https://facebook.com/cqwerty.info"> <i class="fab fa-facebook-square"></i> </a> 
-              <a class="margin-5" href="https://instagram.com/cqwerty.info"> <i class="fab fa-instagram"> </i> </a>
-              <a class="margin-5" href="https://wa.me/5491157395741"><i class="fab fa-whatsapp"> </i> </a>
-              <a class="margin-5" href="tel:+5491157395741"><i class="fa fa-mobile-alt"> </i> 11 5739 5741 </a></p>
-            </div>
-      </footer> 
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="./js/script.js"></script>
-    <script src="./js/data.js"></script>  
-    <script src="./js/app.js"></script>  
-</body>
-    </html>
+  </html>

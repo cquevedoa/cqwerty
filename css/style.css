@@ -3,6 +3,21 @@
     border: 1px solid #d3d3d3;
     color: #d3d3d3;
 }
+.btn-outline-primary {
+    border-color: #005fbf;
+    color: #005fbf;
+}
+.btn-outline-primary:hover {
+    border-color: #005fbf;
+    background-color: #005fbf;
+}
+.btn-primary {
+    border-color: #005fbf;
+    background-color: #005fbf;
+}
+.btn-primary:hover {
+    filter: brightness(150%);
+}
 #btn-whatsapp {
     background-color: #0bbd38;
     color: white;
@@ -150,9 +165,15 @@ section {
 /* BLOG SECTION */
 #blog {
     background-color: #f8f8f8;
+    
+  
 }
 #blog .blog-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 6rem;
+    
 }
 
 .blog-img {
@@ -200,13 +221,17 @@ aside {
 /* CONTACT SECTION */
 #contact .container-lg {
     display: flex;
+    align-items: center;
+    margin-bottom: 6rem;
 }
 .contact-form {
     width: 50%;
     margin-left: 30px;
+    
 }
 .contact-map {
     width: 45%;
+    
 }
 
 /*FOOTER */
@@ -262,6 +287,23 @@ aside.more-content {
     width: 100%;
 }
 
+
+
+
+/* SERVICE MODAL */
+.service-icon-modal {
+    width: 48px;
+    height: auto;
+}
+.service-title-modal {
+    font-size: 1.1rem;
+}
+.service-text-modal {
+    color: var(--text-color);
+}
+.modal {
+    z-index: 9999999999999999;
+}
 
 
 @media (max-width: 768px) {
