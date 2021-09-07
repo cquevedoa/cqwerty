@@ -30,7 +30,7 @@
     height: 50px;
     font-size: 2rem;
     line-height: 50px;
-    z-index: 99999999;
+    z-index: 99999999999999999;
     transition: ease-in-out 0.5s;
 }
 #btn-whatsapp:hover {
