@@ -519,11 +519,26 @@ footer a:hover, footer i:hover {
 
 }
 
-@media (max-width: 562px) {
+@media (max-width: 576px) {
     aside {
         display: flex;
         flex-direction: column;
 
+    }
+    #header {
+        background-color: #005fbf;
+        height: 5rem;
+    }
+    .logo, .logo:hover  {
+        font-size: 2rem;
+        padding: 0;
+        line-height: 5rem;
+    }
+    img.logo-white {
+        height: 3.5rem;
+        line-height: 5rem;
+
+        display: none;
     }
 
 }
