@@ -537,10 +537,13 @@ footer a:hover, footer i:hover {
     img.logo-white {
         height: 3.5rem;
         line-height: 5rem;
-
-        display: none;
     }
+    .nav-btn_open, .nav-btn_close {
+        font-size: 2.2rem;
+        line-height: 5rem;
+        padding: 0 1rem;
 
+    }
 }
 
 
