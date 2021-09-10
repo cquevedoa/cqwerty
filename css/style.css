@@ -88,6 +88,7 @@ section {
 #header {
     height: 8rem;
     width: 100%;
+    background: white;
     /* position: fixed;
     top: 0;
     left: 0;
