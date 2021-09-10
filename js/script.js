@@ -10,6 +10,16 @@ function toggleMenu() {
   closeMenu.addEventListener("click", toggleMenu);
 
 
+// Añadir sombra al navbar cuando se hace scroll
+  const navScroll = document.querySelector("#header");
+
+  window.addEventListener("scroll", () => {
+    navScroll.classList.toggle("nav-scroll", window.scrollY > 0);
+  });
+
+
+
+// MENU VIEJO
 // navBtn.addEventListener("click", () => {
 //     navMenu.classList.toggle("nav-menu_visible")
 
