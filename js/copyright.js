@@ -29,10 +29,10 @@ a.btn-footer:hover {
 <a href="/" class="author text-center"> CARLOS QUEVEDO </a>
 
 <p class="nav-menu">
-  <a class="btn  btn-footer" href="https://linkedin.com/in/cquevedoa"> <i class="fab fa-linkedin"> </i> </a>
-  <a class="btn  btn-footer" href="https://carlosquevedo.com.ar/portfolio"><i class="fab fa-github"> </i>
+  <a class="btn  btn-footer" href="https://bit.ly/cquevedoa_in"> <i class="fab fa-linkedin"> </i> </a>
+  <a class="btn  btn-footer" href="https://bit.ly/cquevedoa_ghi"><i class="fab fa-github"> </i>
   </a>
-  <a class="btn btn-footer" href="https://instagram.com/cqwerty.info"><i class="fab fa-instagram"> </i>
+  <a class="btn btn-footer" href="https://bit.ly/cqwerty_ig"><i class="fab fa-instagram"> </i>
   </a>
 </p>
 </div>
