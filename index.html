@@ -42,7 +42,11 @@
     <div id="top-bar" class="bg-main">
       <div class="container-lg top-bar">
           
-        <a  class="top-bar-element covid-alert" href="./blog/coronavirus.html">
+        <a class="top-bar-element covid-alert"
+        data-toggle="modal" 
+        data-target="#covidModal"
+        onclick="$('#myModal').on('shown.bs.modal', function () {
+                $('#myInput').trigger('focus')})">
           <i class="fa fa-virus"> </i> Coronavirus </a>
     
      
@@ -88,36 +92,7 @@
 
   </header>
  
-  <!-- <div class="container">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./img/anuncio3.jpg" class="d-block wxt0" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/anuncio1.jpg" class="d-block wxt0" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./img/anuncio2.jpg" class="d-block wxt0" alt="...">
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Anterior</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Siguiente</span>
-      </a>
-    </div>
-  </div>
- -->
-
+  
 <section class="container welcome-section">
 
   <div class="row justify-content-between">
@@ -138,32 +113,6 @@
   </div></div>
 </section>
 
-
-
-
-
-  <!-- <section id="nosotros">
-    <h2 class="section-title">Servicio Técnico Especializado</h2>
-    <div class="mt-5 nosotros container d-flex">
-      <div>
-        <img src="./img/nosotros.svg" alt="">
-      </div>
-      <p>
-      <ul class="nosotros-li">
-        <li><i class="fa fa-check-square"> </i> Ofrecemos soluciones de software y hardware en Ciudad de Buenos Aires.
-        </li>
-        <li><i class="fa fa-check-square"> </i> Ofrecemos Soporte Online y a Domicilio para particulares</li>
-        <li><i class="fa fa-check-square"> </i> Contamos con los mejores precios del mercado</li>
-        <li><i class="fa fa-check-square"> </i> Aceptamos todos los medios de pago.</li>
-      </ul>
-
-
-
-      </p>
-
-    </div>
-  </section> -->
-  
 
 
   <main id="services" class="mb-5 container flex-wrap">
@@ -319,49 +268,7 @@
   </main>
   
 
-  <section id="blog">
-
-    <h2 class="section-title">Blog</h2>
-
-    
-    <div class="container blog-container">
-      <article class="blog-content">
-      <img class="blog-img img-thumbnail" src="./img/blog/windows11.webp" alt="Windows 11">
-      <h3 class="blog-title">
-        Microsoft lanzará Windows 11 en 5 de octubre.
-      </h3>
-      <p class="blog-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem suscipit sapiente laboriosam placeat officia quisquam dolore modi magni labore aperiam! Est corporis temporibus aliquam, debitis aut commodi harum rem modi.
-      </p>
-
-    </article>
-
-    <aside>
-
-      <div class="aside-content">
-        <img src="./img/blog/chromebook.jpg" class="blog-img-aside img-thumbnail" alt="Chromebook">
-        <div class="blog-content-aside">
-          <h4 class="blog-title-aside">Alarga la vida útil de tu notebook vieja con Chrome OS</h4>
-          <p class="blog-text-aside">Si tienes un equipo viejo y sin uso, dale vida nuevamente usando Chromium OS con
-          CloundReady.</p>
-        </div>
-      </div>
-      <div class="aside-content">
-        <img class="blog-img-aside img-thumbnail" src="./img/blog/pc-lenta.jpg" alt="Computadora lenta">
-        <div class="blog-content-aside">
-        <h4 class="blog-title-aside">¿Computadora Lenta?</h4>
-        <p class="blog-text-aside">Programas y aplicaciones de Windows 10 que te pueden ayudar a obtener un mejor
-          rendimiento a tu equipo.</p>
-              </div>
-            </div>
-
-    </aside>
-  </div>
-    
-
-  </section>
-
-  
-  
+   
 
   <section id="contact">
 
@@ -410,6 +317,54 @@
 
   </section>
   
+
+  <div class="modal fade" id="covidModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Coronavirus</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body ">
+                  <p class="blog-content">
+                        
+                    <blockquote>
+                    AVISO: Debido a la situación de pandemia por el nuevo coronavirus, todos los servicios a domicilio
+                    están suspendidos hasta nuevo aviso.
+
+
+                </blockquote>
+
+                <div class="d-flex justify-content-center">
+                    <a class="m-1 text-white bg-main text-center btn btn-lg blog-cards"><i class="fa fa-head-side-mask">
+                        </i></a>
+                    <a class="m-1 text-white bg-main text-center btn btn-lg blog-cards"><i class="fa fa-people-arrows"> </i></a>
+                    <a class="m-1 text-white bg-main text-center btn btn-lg blog-cards"><i class="fa fa-hands-wash"> </i></a>
+                </div>
+
+                <p>Es tarea de todos y todas cuidarnos, por eso hemos tomado una serie de medidas para protegerte y protegernos.
+                </p>
+
+                <h3 class="m-3">Medidas de prevención de contagios e higienización durante el servicio</h3>
+
+                <ul>
+                    <li> Lavado constante de manos</li>
+                    <li>Protocolo de distanciamiento social y sistema de turnos con cada cliente</li>
+                    <li>Uso de tapabocas al contacto con cliente</li>
+                    <li>Higienización de manos y equipos con alcohol al 70% antes del servicio</li>
+                    <li>Uso de guantes al manipular hardware interno</li>
+                    <li>Limpieza final con solución de alcohol al terminar el servicio</li>
+                    <li>Suspensión de servicios a domicilio</li>
+                </ul>
+
+
+                </p>  <!-- end blog-content -->
+        </div>
+      </div>
+    </div>
+  </div>      
 
 
   <footer class="bg-main">

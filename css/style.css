@@ -487,6 +487,7 @@ aside {
 .contact-form {
     width: 90%;
     margin-right: 0 auto;
+    padding: 0;
 }
 .contact-map {
     width: 100%;

@@ -24,6 +24,7 @@ html {
     16px es la base del tamaño fuente en html 
     62.5 = 10px de 16px
         */
+        scroll-behavior: smooth;
 }
 *, *:before, *:after {
     box-sizing: inherit;
@@ -51,3 +52,9 @@ button {
     background: none;
     outline: none;
 }
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;       
+  }  
